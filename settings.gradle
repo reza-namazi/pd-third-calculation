@@ -1,0 +1,6 @@
+rootProject.name = 'pd-third-calculation'
+include 'pd-calculation-core'
+include 'pd-calculation-model'
+include 'pd-calculation-protocol'
+include 'pd-vertx-stack'
+

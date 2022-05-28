@@ -1,0 +1,33 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    //id 'org.jetbrains.kotlin.jvm' apply false
+    id 'groovy'
+    id 'java'
+    id 'jacoco'
+    id 'idea'
+    id 'application'
+}
+
+group 'ir.pd'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':pd-calculation-core')
+    implementation project(':pd-calculation-model')
+    implementation 'io.vavr:vavr:1.0.0-alpha-4'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.10'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+
+test {
+    useJUnitPlatform()
+}
+

@@ -1,0 +1,50 @@
+# sbt
+lib_managed
+project/project
+target
+build
+tmp
+
+# maven
+.flattened-pom.xml
+
+# Worksheets (Eclipse or IntelliJ)
+*.sc
+
+# Eclipse
+.cache*
+.classpath
+.project
+.scala_dependencies
+.settings
+.target
+.worksheet
+
+# IntelliJ
+.idea
+*.iml
+
+# ENSIME
+.ensime
+.ensime_lucene
+.ensime_cache
+
+# Mac
+.DS_Store
+
+# Akka
+ddata*
+journal
+snapshots
+
+# Log files
+*.log
+
+.java-version
+/.factorypath
+/.apt_generated_tests/
+
+# maven
+*.versionsBackup
+
+gradle/
